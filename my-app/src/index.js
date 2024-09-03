@@ -6,6 +6,7 @@ import FunctionalRender from './FunctionalRender';
 import reportWebVitals from './reportWebVitals';
 import JsxConcept from './JsxConcept';
 import JavascriptExpression from './JavascriptExpression';
+import MapFunction from './MapFunction';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -30,6 +31,11 @@ jsxConcept.render(
 const javascriptExpression = ReactDOM.createRoot(document.getElementById('javascriptExpression'));
 javascriptExpression.render(
   <JavascriptExpression/>
+);
+
+const mapFunction = ReactDOM.createRoot(document.getElementById('mapFunction'));
+mapFunction.render(
+  <MapFunction/>
 );
 
 reportWebVitals();

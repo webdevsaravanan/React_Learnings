@@ -17,7 +17,7 @@ function JavascriptExpression() {
         <h1>{"Accessing object in JSX:"}</h1>
         <h3>{"First son name is "}{firtSonName.firstName}</h3>
         <h3>{"Second son name is "}{secondSonName.firstName} {secondSonName.lastName}</h3>
-        <h1>{"Evaluating expression"}</h1>
+        <h2>{"Evaluating expression:"}</h2>
         <h3> {x} {">"}{y} {":"} {x>y ? 'True' : 'False'}</h3>
       </>
     );
