@@ -1,15 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import FunctionalRender from './FunctionalRender'
-import reportWebVitals from './reportWebVitals'
-import JsxConcept from './JsxConcept'
-import JavascriptExpression from './JavascriptExpression'
-import MapFunction from './MapFunction'
-import CssJsx from './CssJsx'
-import Materialui from './MaterialUI'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import FunctionalRender from './FunctionalRender';
+import reportWebVitals from './reportWebVitals';
+import JsxConcept from './JsxConcept';
+import JavascriptExpression from './JavascriptExpression';
+import MapFunction from './MapFunction';
+import CssJsx from './CssJsx';
+import Materialui from './MaterialUI';
 import { Link, Routes, Route, BrowserRouter } from "react-router-dom";
 import Show from "./Show";
+import State from './State';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -60,6 +61,7 @@ cssJsx.render(<CssJsx />)
 const materialUI = ReactDOM.createRoot(document.getElementById('Materialui'))
 materialUI.render(<Materialui />)
 
-
+const state = ReactDOM.createRoot(document.getElementById('State'))
+state.render(<State />)
 
 reportWebVitals()
