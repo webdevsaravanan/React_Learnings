@@ -11,6 +11,7 @@ import Materialui from './MaterialUI';
 import { Link, Routes, Route, BrowserRouter } from "react-router-dom";
 import Show from "./Show";
 import State from './State';
+import Employees from './Employees';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -64,4 +65,6 @@ materialUI.render(<Materialui />)
 const state = ReactDOM.createRoot(document.getElementById('State'))
 state.render(<State />)
 
+const employees = ReactDOM.createRoot(document.getElementById('Employees'))
+employees.render(<Employees />)
 reportWebVitals()

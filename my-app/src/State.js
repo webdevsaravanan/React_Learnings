@@ -48,7 +48,7 @@ function State() {
             return (
               <tr key={employee.empId}>
                 <td>{employee.empId}</td>
-                <td>{employee.name}</td>
+                <td>{employee.name}</td> 
                 <td>{employee.designation}</td>
               </tr>
             );
