@@ -6,7 +6,7 @@ const Employee = (props) => {
  <table style={{ width: '60%' }} className='table'>
           <thead className="thead-light">
                              <tr>
-                                        <th>EmpID</th>
+                            <th>Employee Id</th>
                                         <th>Name</th>
                                         <th>Designation</th>
                                 </tr>
