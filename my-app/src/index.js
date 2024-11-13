@@ -12,6 +12,7 @@ import { Link, Routes, Route, BrowserRouter } from "react-router-dom";
 import Show from "./Show";
 import State from './State';
 import Employees from './Employees';
+import Card from './Card';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -67,4 +68,7 @@ state.render(<State />)
 
 const employees = ReactDOM.createRoot(document.getElementById('Employees'))
 employees.render(<Employees />)
+
+const card = ReactDOM.createRoot(document.getElementById('Card'))
+card.render(<Card />)
 reportWebVitals()
