@@ -13,6 +13,7 @@ import Show from "./Show";
 import State from './State';
 import Employees from './Employees';
 import Card from './Card';
+import Educator from './Educator';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -71,4 +72,7 @@ employees.render(<Employees />)
 
 const card = ReactDOM.createRoot(document.getElementById('Card'))
 card.render(<Card />)
+
+const educator = ReactDOM.createRoot(document.getElementById('Educator'))
+educator.render(<Educator />)
 reportWebVitals()
