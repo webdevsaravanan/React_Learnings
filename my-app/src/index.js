@@ -14,6 +14,7 @@ import State from './State';
 import Employees from './Employees';
 import Card from './Card';
 import Educator from './Educator';
+import EmployeeSearch from './EmployeeSearch';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -75,4 +76,8 @@ card.render(<Card />)
 
 const educator = ReactDOM.createRoot(document.getElementById('Educator'))
 educator.render(<Educator />)
+
+const employeeSearch = ReactDOM.createRoot(document.getElementById('EmployeeSearch'))
+employeeSearch.render(<EmployeeSearch />)
+
 reportWebVitals()
