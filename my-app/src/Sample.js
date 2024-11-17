@@ -4,7 +4,7 @@ function Sample() {
   const [age,setAge] = useState(20)
   useEffect(()=>{
    console.log("use Effect called")
-  })
+  },[])
   return (
   <div>
         <h1>Your Name is: {name}</h1><br/>
