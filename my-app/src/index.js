@@ -83,6 +83,10 @@ employeeSearch.render(<EmployeeSearch />)
 
 const sample = ReactDOM.createRoot(document.getElementById('Sample'));
 sample.render(
-    <Sample/>);
-
+    <Sample/>);   
+//unmount component 
+    setTimeout(() => {
+      sample.unmount( document.getElementById('Sample') );
+      console.log("unmounted")
+     }, 5000);
 reportWebVitals()
