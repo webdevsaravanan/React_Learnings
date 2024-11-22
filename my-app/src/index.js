@@ -17,6 +17,7 @@ import Educator from './Educator';
 import EmployeeSearch from './EmployeeSearch';
 import Sample from './Sample';
 import Form from './Form';
+import FormValidate from './FormValidate';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -91,6 +92,10 @@ sample.render(
       console.log("unmounted")
      }, 5000);
 
-const form = ReactDOM.createRoot(document.getElementById('EmployeeSearch'))
+const form = ReactDOM.createRoot(document.getElementById('Form'))
 form.render(<Form />)   
+
+const formValidate = ReactDOM.createRoot(document.getElementById('FormValidate'))
+formValidate.render(<FormValidate />)   
+
 reportWebVitals()

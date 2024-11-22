@@ -43,3 +43,61 @@
   width: 100px;
   height: 30px;
 }
+/* Form related CSS */
+/* Form Container */
+#registration-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* Form Group */
+.form-group {
+  margin-bottom: 10px;
+}
+.title{
+  text-align: center;
+}
+/* Form Label */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+/* Form Input */
+input, select {
+  width: 90%;
+  padding: 8px;
+   
+}
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    outline: none;
+  }
+  .form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .form-row label {
+    margin-right: 10px;
+  }  
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
