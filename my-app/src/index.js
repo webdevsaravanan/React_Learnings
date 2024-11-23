@@ -18,6 +18,10 @@ import EmployeeSearch from './EmployeeSearch';
 import Sample from './Sample';
 import Form from './Form';
 import FormValidate from './FormValidate';
+import Ecart from './Ecart';
+import SearchBar from './SearchBar';
+import FormRef from './FormRef';
+import AddAxios from './AddAxios';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <React.StrictMode>
@@ -97,5 +101,17 @@ form.render(<Form />)
 
 const formValidate = ReactDOM.createRoot(document.getElementById('FormValidate'))
 formValidate.render(<FormValidate />)   
+
+const ecart = ReactDOM.createRoot(document.getElementById('Ecart'))
+ecart.render(<Ecart />)   
+
+const searchBar = ReactDOM.createRoot(document.getElementById('SearchBar'))
+searchBar.render(<SearchBar />)   
+
+const formRef = ReactDOM.createRoot(document.getElementById('FormRef'))
+formRef.render(<FormRef />)   
+
+const addAxios= ReactDOM.createRoot(document.getElementById('AddAxios'))
+addAxios.render(<AddAxios />)   
 
 reportWebVitals()
