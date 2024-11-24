@@ -11,7 +11,6 @@ function SearchBar() {
     }
     function handleSubmit() {
       console.log("Search submitted:", searchText);
-      // we can Also add Search submission Logic here
     }
     return (
       <div>
