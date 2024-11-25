@@ -7,9 +7,8 @@ import JsxConcept from './JsxConcept';
 import JavascriptExpression from './JavascriptExpression';
 import MapFunction from './MapFunction';
 import CssJsx from './CssJsx';
-import Materialui from './MaterialUI';
-import { Link, Routes, Route, BrowserRouter } from "react-router-dom";
-import Show from "./Show";
+import MaterialUI from './MaterialUI';
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import State from './State';
 import Employees from './Employees';
 import Card from './Card';
@@ -22,21 +21,12 @@ import Ecart from './Ecart';
 import SearchBar from './SearchBar';
 import FormRef from './FormRef';
 import AddAxios from './AddAxios';
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+import Header from './Header'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <>
-  <BrowserRouter>
+  {/* <BrowserRouter>
         <nav className="navbar navbar-dark bg-dark">
           <div className="container">
             <li className="nav-item">
@@ -49,69 +39,40 @@ root.render(
         <Routes>
           <Route path="/Show" element={<Show />}></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <BrowserRouter>
+      <Header />
+  <Routes>
+      <Route path="/" element={<FunctionalRender />}/>
+      <Route index path="root" element={<FunctionalRender />}/>
+      <Route path="jsxConcept" element={<JsxConcept />}/>
+      <Route path="javascriptExpression" element={<JavascriptExpression/>}/>
+      <Route path="mapFunction" element={<MapFunction/>}/>
+      <Route path="cssJsx" element={<CssJsx/>}/>
+      <Route path="Materialui" element={<MaterialUI/>}/>
+      <Route path="State" element={<State/>}/>
+      <Route path="Employees" element={<Employees/>}/>
+      <Route path="Card" element={<Card/>}/>
+      <Route path="Educator" element={<Educator />}/>
+      <Route path="EmployeeSearch" element={<EmployeeSearch/>}/>
+      <Route path="Sample" element={<Sample/>}/>
+      <Route path="Form" element={<Form/>}/>
+      <Route path="FormValidate" element={<FormValidate/>}/>
+      <Route path="Ecart" element={<Ecart/>}/>
+      <Route path="SearchBar" element={ <SearchBar/>}/>
+      <Route path="FormRef" element={<FormRef/>}/>
+      <Route path="AddAxios" element={<AddAxios/>}/>
+  </Routes>
+</BrowserRouter> 
   </>
 )
-const functionalRender = ReactDOM.createRoot(document.getElementById('FunctionalRender'))
-functionalRender.render(<FunctionalRender />)
-
-const jsxConcept = ReactDOM.createRoot(document.getElementById('jsxConcept'))
-jsxConcept.render(<JsxConcept />)
-
-const javascriptExpression = ReactDOM.createRoot(
-  document.getElementById('javascriptExpression')
-)
-javascriptExpression.render(<JavascriptExpression />)
-
-const mapFunction = ReactDOM.createRoot(document.getElementById('mapFunction'))
-mapFunction.render(<MapFunction />)
-
-const cssJsx = ReactDOM.createRoot(document.getElementById('cssJsx'))
-cssJsx.render(<CssJsx />)
-
-const materialUI = ReactDOM.createRoot(document.getElementById('Materialui'))
-materialUI.render(<Materialui />)
-
-const state = ReactDOM.createRoot(document.getElementById('State'))
-state.render(<State />)
-
-const employees = ReactDOM.createRoot(document.getElementById('Employees'))
-employees.render(<Employees />)
-
-const card = ReactDOM.createRoot(document.getElementById('Card'))
-card.render(<Card />)
-
-const educator = ReactDOM.createRoot(document.getElementById('Educator'))
-educator.render(<Educator />)
-
-const employeeSearch = ReactDOM.createRoot(document.getElementById('EmployeeSearch'))
-employeeSearch.render(<EmployeeSearch />)
-
-const sample = ReactDOM.createRoot(document.getElementById('Sample'));
-sample.render(
-    <Sample/>);   
-//unmount component 
-    setTimeout(() => {
-      sample.unmount( document.getElementById('Sample') );
-      console.log("unmounted")
-     }, 5000);
-
-const form = ReactDOM.createRoot(document.getElementById('Form'))
-form.render(<Form />)   
-
-const formValidate = ReactDOM.createRoot(document.getElementById('FormValidate'))
-formValidate.render(<FormValidate />)   
-
-const ecart = ReactDOM.createRoot(document.getElementById('Ecart'))
-ecart.render(<Ecart />)   
-
-const searchBar = ReactDOM.createRoot(document.getElementById('SearchBar'))
-searchBar.render(<SearchBar />)   
-
-const formRef = ReactDOM.createRoot(document.getElementById('FormRef'))
-formRef.render(<FormRef />)   
-
-const addAxios= ReactDOM.createRoot(document.getElementById('AddAxios'))
-addAxios.render(<AddAxios />)   
+// const sample = ReactDOM.createRoot(document.getElementById('Sample'));
+// sample.render(
+//     <Sample/>);   
+// //unmount component 
+//     setTimeout(() => {
+//       sample.unmount( document.getElementById('Sample') );
+//       console.log("unmounted")
+//      }, 5000);
 
 reportWebVitals()
