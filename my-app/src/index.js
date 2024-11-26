@@ -26,7 +26,7 @@ import Header from './Header';
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <>
-  {/* <BrowserRouter>
+  {/*<BrowserRouter>
         <nav className="navbar navbar-dark bg-dark">
           <div className="container">
             <li className="nav-item">
