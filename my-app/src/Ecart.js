@@ -18,8 +18,7 @@ const [items, setItems] = useState([
         return (cost += itm.quantity *itm.cpu)
     })
     setTotalcost(cost)
-  }
-  
+  } 
   return (
     <div>
         <div className="row m-5">
