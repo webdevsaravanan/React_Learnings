@@ -22,6 +22,8 @@ import SearchBar from './SearchBar';
 import FormRef from './FormRef';
 import AddAxios from './AddAxios';
 import Header from './Header'; 
+import Navigate from './Navigate';
+import Landing from './Landing';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -62,6 +64,9 @@ root.render(
       <Route path="SearchBar" element={ <SearchBar/>}/>
       <Route path="FormRef" element={<FormRef/>}/>
       <Route path="AddAxios" element={<AddAxios/>}/>
+      <Route path="RouterNavigation" element={<Navigate/>}/>
+      <Route path="landing/:name/" element={<Landing/>}/>
+      <Route path="*" element={<FunctionalRender/>} />
   </Routes>
 </BrowserRouter> 
   </>
