@@ -24,7 +24,12 @@ import AddAxios from './AddAxios';
 import Header from './Header'; 
 import Navigate from './Navigate';
 import Landing from './Landing';
+import {legacy_createStore as createStore } from 'redux';
+import reducer from './reducers/CounterReducer';
+import { Provider } from 'react-redux';
+import Counter from './components/Counter';
 
+var store = createStore(reducer);
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <>
@@ -66,6 +71,10 @@ root.render(
       <Route path="AddAxios" element={<AddAxios/>}/>
       <Route path="RouterNavigation" element={<Navigate/>}/>
       <Route path="landing/:name/" element={<Landing/>}/>
+      <Route path="Redux" element={
+        <Provider store={store}>
+          <Counter/>
+        </Provider>}/>
       <Route path="*" element={<FunctionalRender/>} />
   </Routes>
 </BrowserRouter> 
@@ -79,5 +88,7 @@ root.render(
 //       sample.unmount( document.getElementById('Sample') );
 //       console.log("unmounted")
 //      }, 5000);
+
+
 
 reportWebVitals()

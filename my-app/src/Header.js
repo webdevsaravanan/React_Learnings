@@ -28,6 +28,7 @@ return (
     <ul className="nav nav-pills flex-column mb-auto"><li className="nav-item"> <Link className="nav-link " to="FormRef">Uncontrolled Form</Link></li></ul> 
     <ul className="nav nav-pills flex-column mb-auto"><li className="nav-item"> <Link className="nav-link " to="AddAxios">Axios Data Fetch</Link></li></ul>
     <ul className="nav nav-pills flex-column mb-auto"><li className="nav-item"> <Link className="nav-link " to="RouterNavigation">Router</Link></li></ul>
+    <ul className="nav nav-pills flex-column mb-auto"><li className="nav-item"> <Link className="nav-link " to="Redux">Redux</Link></li></ul>
     <Outlet/>
     <hr/>
   </div>
