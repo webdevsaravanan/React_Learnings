@@ -28,8 +28,10 @@ import {legacy_createStore as createStore } from 'redux';
 import reducer from './reducers/CounterReducer';
 import { Provider } from 'react-redux';
 import Counter from './components/Counter';
+import {applyMiddleware} from 'redux';
+import {thunk} from 'redux-thunk';
 
-var store = createStore(reducer);
+var store = applyMiddleware(thunk)(createStore)(reducer);
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <>

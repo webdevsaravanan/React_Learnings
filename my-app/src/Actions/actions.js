@@ -10,4 +10,13 @@ export function increment(step){
       step
     }
   }
+  export function CallIncrement(step){
+    //asynchronous operations can be written here.
+    console.log("CallIncrement");
+    return (dispatch)=>{
+      setTimeout(()=>{
+          dispatch(increment(step));
+      },3000)
+    }
+  }
   
