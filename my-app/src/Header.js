@@ -29,6 +29,8 @@ return (
     <ul className="nav nav-pills flex-column mb-auto"><li className="nav-item"> <Link className="nav-link " to="AddAxios">Axios Data Fetch</Link></li></ul>
     <ul className="nav nav-pills flex-column mb-auto"><li className="nav-item"> <Link className="nav-link " to="RouterNavigation">Router</Link></li></ul>
     <ul className="nav nav-pills flex-column mb-auto"><li className="nav-item"> <Link className="nav-link " to="Redux">Redux</Link></li></ul>
+    <ul className="nav nav-pills flex-column mb-auto"><li className="nav-item"> <Link className="nav-link " to="Redux2">Redux-2</Link></li></ul>
+    <ul className="nav nav-pills flex-column mb-auto"><li className="nav-item"> <Link className="nav-link " to="Login">Redux-Login</Link></li></ul>
     <Outlet/>
     <hr/>
   </div>

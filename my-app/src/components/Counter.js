@@ -4,7 +4,7 @@ import { decrement,CallIncrement } from "../Actions/actions";
 import 'bootstrap/dist/css/bootstrap.min.css';
 const Counter = () => {
 	const [step,setStep]=useState(0);
-  const counter = useSelector(state=>state.count)
+  const counter = useSelector(state=>state.CounterReducer.count)
   const dispatch = useDispatch()
   return(
     <>

@@ -25,13 +25,15 @@ import Header from './Header';
 import Navigate from './Navigate';
 import Landing from './Landing';
 import {legacy_createStore as createStore } from 'redux';
-import reducer from './reducers/CounterReducer';
+import rootReducer from './reducers/RootReducer';
 import { Provider } from 'react-redux';
 import Counter from './components/Counter';
+import Counter2 from './components/Counter2';
+import Login from './components/Login';
 import {applyMiddleware} from 'redux';
 import {thunk} from 'redux-thunk';
 
-var store = applyMiddleware(thunk)(createStore)(reducer);
+var store = applyMiddleware(thunk)(createStore)(rootReducer);
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <>
@@ -49,6 +51,7 @@ root.render(
           <Route path="/Show" element={<Show />}></Route>
         </Routes>
       </BrowserRouter> */}
+      <Provider store={store}>
       <BrowserRouter>
       <Header />
   <Routes>
@@ -73,13 +76,13 @@ root.render(
       <Route path="AddAxios" element={<AddAxios/>}/>
       <Route path="RouterNavigation" element={<Navigate/>}/>
       <Route path="landing/:name/" element={<Landing/>}/>
-      <Route path="Redux" element={
-        <Provider store={store}>
-          <Counter/>
-        </Provider>}/>
+      <Route path="Redux" element={<Counter/>}/>
+      <Route path="Redux2" element={<Counter2/>}/>
+      <Route path="Login" element={<Login/>}/>
       <Route path="*" element={<FunctionalRender/>} />
   </Routes>
 </BrowserRouter> 
+</Provider>
   </>
 )
 // const sample = ReactDOM.createRoot(document.getElementById('Sample'));
