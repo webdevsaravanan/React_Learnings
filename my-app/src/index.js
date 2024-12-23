@@ -33,7 +33,7 @@ import Login from './components/Login';
 import {applyMiddleware} from 'redux';
 import {thunk} from 'redux-thunk';
 
-var store = applyMiddleware(thunk)(createStore)(rootReducer);
+var store = applyMiddleware(thunk)(createStore)(rootReducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <>
